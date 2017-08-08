@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.w.m.crmmobile.controllers.activities.EditMasterDataActivity"
+    android:orientation="vertical"
+    android:background="@drawable/rgb_background">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:text="@string/cid"
+                android:layout_width="match_parent"
+                android:layout_height="30sp"
+                android:gravity="bottom"
+                android:textAlignment="gravity"
+                android:background="@color/colorAccent"
+                android:textColor="@color/colorPrimary"/>
+
+            <TextView
+                android:id="@+id/cid"
+                android:layout_width="match_parent"
+                android:layout_height="28pt"
+                android:hint="@string/cid"/>
+
+            <TextView
+                android:text="@string/company"
+                android:layout_width="match_parent"
+                android:layout_height="30sp"
+                android:gravity="bottom"
+                android:textAlignment="gravity"
+                android:background="@color/colorAccent"
+                android:textColor="@color/colorPrimary"/>
+
+            <EditText
+                android:id="@+id/company"
+                android:layout_width="match_parent"
+                android:layout_height="28pt"
+                android:hint="@string/company" />
+
+            <TextView
+                android:text="@string/address"
+                android:layout_width="match_parent"
+                android:layout_height="30sp"
+                android:gravity="bottom"
+                android:textAlignment="gravity"
+                android:background="@color/colorAccent"
+                android:textColor="@color/colorPrimary"/>
+
+            <EditText
+                android:id="@+id/address"
+                android:layout_width="match_parent"
+                android:layout_height="28pt"
+                android:hint="@string/address"/>
+
+            <TextView
+                android:text="@string/zip"
+                android:layout_width="match_parent"
+                android:layout_height="30sp"
+                android:gravity="bottom"
+                android:textAlignment="gravity"
+                android:background="@color/colorAccent"
+                android:textColor="@color/colorPrimary"/>
+
+            <EditText
+                android:id="@+id/zip"
+                android:layout_width="match_parent"
+                android:layout_height="28pt"
+                android:hint="@string/zip"/>
+
+            <TextView
+                android:text="@string/city"
+                android:layout_width="match_parent"
+                android:layout_height="30sp"
+                android:gravity="bottom"
+                android:textAlignment="gravity"
+                android:background="@color/colorAccent"
+                android:textColor="@color/colorPrimary"/>
+
+            <EditText
+                android:id="@+id/city"
+                android:layout_width="match_parent"
+                android:layout_height="28pt"
+                android:hint="@string/city"/>
+
+            <TextView
+                android:text="@string/country"
+                android:layout_width="match_parent"
+                android:layout_height="30sp"
+                android:gravity="bottom"
+                android:textAlignment="gravity"
+                android:background="@color/colorAccent"
+                android:textColor="@color/colorPrimary"/>
+
+            <EditText
+                android:id="@+id/country"
+                android:layout_width="match_parent"
+                android:layout_height="28pt"
+                android:hint="@string/country"/>
+
+            <TextView
+                android:text="@string/contractId"
+                android:layout_width="match_parent"
+                android:layout_height="30sp"
+                android:gravity="bottom"
+                android:textAlignment="gravity"
+                android:background="@color/colorAccent"
+                android:textColor="@color/colorPrimary"/>
+
+            <EditText
+                android:id="@+id/contractId"
+                android:layout_width="match_parent"
+                android:layout_height="28pt"
+                android:hint="@string/contractId"/>
+
+            <TextView
+                android:text="@string/contractDate"
+                android:layout_width="match_parent"
+                android:layout_height="30sp"
+                android:gravity="bottom"
+                android:textAlignment="gravity"
+                android:background="@color/colorAccent"
+                android:textColor="@color/colorPrimary"/>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/contractDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="28pt"
+                    android:hint="@string/contractDate"
+                    android:inputType="date"/>
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    style="@style/crmImageButton"
+                    android:src="@drawable/calendar_icon"
+                    android:onClick="selectDate"/>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center_horizontal">
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:text="@string/cancel"
+                        android:onClick="cancel"/>
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/submit"
+                        android:onClick="submit"/>
+
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

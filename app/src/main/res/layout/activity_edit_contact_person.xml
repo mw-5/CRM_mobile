@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.w.m.crmmobile.controllers.activities.EditContactPersonActivity"
+    android:background="@drawable/rgb_background">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:text="@string/id"
+                android:layout_width="match_parent"
+                android:layout_height="30sp"
+                android:gravity="bottom"
+                android:textAlignment="gravity"
+                android:background="@color/colorAccent"
+                android:textColor="@color/colorPrimary"/>
+
+            <TextView
+                android:id="@+id/id"
+                android:layout_width="match_parent"
+                android:layout_height="28pt"
+                android:hint="@string/id"/>
+
+            <TextView
+                android:text="@string/cid"
+                android:layout_width="match_parent"
+                android:layout_height="30sp"
+                android:gravity="bottom"
+                android:textAlignment="gravity"
+                android:background="@color/colorAccent"
+                android:textColor="@color/colorPrimary"/>
+
+            <TextView
+                android:id="@+id/cid"
+                android:layout_width="match_parent"
+                android:layout_height="28pt"
+                android:hint="@string/cid"/>
+
+            <TextView
+                android:text="@string/forename"
+                android:layout_width="match_parent"
+                android:layout_height="30sp"
+                android:gravity="bottom"
+                android:textAlignment="gravity"
+                android:background="@color/colorAccent"
+                android:textColor="@color/colorPrimary"/>
+
+            <EditText
+                android:id="@+id/forename"
+                android:layout_width="match_parent"
+                android:layout_height="28pt"
+                android:hint="@string/forename" />
+
+            <TextView
+                android:text="@string/surname"
+                android:layout_width="match_parent"
+                android:layout_height="30sp"
+                android:gravity="bottom"
+                android:textAlignment="gravity"
+                android:background="@color/colorAccent"
+                android:textColor="@color/colorPrimary"/>
+
+            <EditText
+                android:id="@+id/surname"
+                android:layout_width="match_parent"
+                android:layout_height="28pt"
+                android:hint="@string/surname" />
+
+            <TextView
+                android:text="@string/gender"
+                android:layout_width="match_parent"
+                android:layout_height="30sp"
+                android:gravity="bottom"
+                android:textAlignment="gravity"
+                android:background="@color/colorAccent"
+                android:textColor="@color/colorPrimary"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+
+                <CheckBox
+                    android:id="@+id/male"
+                    android:text="@string/male"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="setGender"/>
+
+                <CheckBox
+                    android:id="@+id/female"
+                    android:text="@string/female"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="setGender"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:text="@string/email"
+                android:layout_width="match_parent"
+                android:layout_height="30sp"
+                android:gravity="bottom"
+                android:textAlignment="gravity"
+                android:background="@color/colorAccent"
+                android:textColor="@color/colorPrimary"/>
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="28pt"
+                android:hint="@string/email" />
+
+            <TextView
+                android:text="@string/phone"
+                android:layout_width="match_parent"
+                android:layout_height="30sp"
+                android:gravity="bottom"
+                android:textAlignment="gravity"
+                android:background="@color/colorAccent"
+                android:textColor="@color/colorPrimary"/>
+
+            <EditText
+                android:id="@+id/phone"
+                android:layout_width="match_parent"
+                android:layout_height="28pt"
+                android:hint="@string/phone" />
+
+            <TextView
+                android:text="@string/mainContact"
+                android:layout_width="match_parent"
+                android:layout_height="30sp"
+                android:gravity="bottom"
+                android:textAlignment="gravity"
+                android:background="@color/colorAccent"
+                android:textColor="@color/colorPrimary"/>
+
+            <CheckBox
+                android:id="@+id/mainContact"
+                android:text="@string/mainContact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center">
+
+                    <Button
+                        android:text="@string/cancel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:onClick="cancel"/>
+
+                    <Button
+                        android:text="@string/submit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="submit" />
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,102 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.w.m.crmmobile.controllers.fragments.MasterDataFragment"
+    style="@style/CrmTheme">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:textStyle="bold"
+                android:text="@string/masterData"/>
+
+            <ImageButton
+                android:id="@+id/imageButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:onClick="editMasterData"
+                style="@style/crmImageButton"
+                android:src="@drawable/edit_icon" />
+
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:padding="2dp"
+            android:id="@+id/company" />
+
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:rowCount="7">
+            <!--tools:layout_editor_absoluteY="0dp"-->
+            <!--tools:layout_editor_absoluteX="0dp"-->
+
+            <TextView
+                android:text="@string/cid"
+                android:layout_width="match_parent"
+                android:layout_gravity="center" />
+            <TextView
+                android:id="@+id/cid" />
+            <TextView
+                android:text="@string/address"
+                android:layout_width="match_parent"
+                android:layout_gravity="center"/>
+            <TextView
+                android:id="@+id/address"/>
+            <TextView
+                android:text="@string/zip"
+                android:layout_width="match_parent"
+                android:layout_gravity="center"/>
+            <TextView
+                android:id="@+id/zip"/>
+            <TextView
+                android:text="@string/city"
+                android:layout_width="match_parent"
+                android:layout_gravity="center"/>
+            <TextView
+                android:id="@+id/city"/>
+            <TextView
+                android:text="@string/country"
+                android:layout_width="match_parent"
+                android:layout_gravity="center"/>
+            <TextView
+                android:id="@+id/country"/>
+            <TextView
+                android:text="@string/contractId"
+                android:layout_width="match_parent"
+                android:layout_gravity="center"/>
+            <TextView
+                android:id="@+id/contractId"/>
+            <TextView
+                android:text="@string/contractDate"
+                android:layout_width="match_parent"
+                android:layout_gravity="center"/>
+            <TextView
+                android:id="@+id/contractDate"
+                android:padding="2dp"/>
+        </GridLayout>
+
+    </LinearLayout>
+
+</FrameLayout>
